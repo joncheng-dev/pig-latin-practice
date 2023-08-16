@@ -6,6 +6,8 @@
 
 let str;
 
-if (str[0].toLowerCase() === ("a" || "e" || "i" || "o" || "u")) {
-  console.log(str.concat("way"));
+function pigLatin(str) {
+  if (str[0].toLowerCase() === ("a" || "e" || "i" || "o" || "u")) {
+    console.log(str.concat("way"));
+  }
 }
