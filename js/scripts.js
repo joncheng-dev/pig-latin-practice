@@ -9,5 +9,7 @@ let str;
 function pigLatin(str) {
   if (str[0].toLowerCase() === ("a" || "e" || "i" || "o" || "u")) {
     console.log(str.concat("way"));
+  } else if (str[0].toLowerCase() !== ("a" || "e" || "i" || "o" || "u")) {
+    console.log(str.slice(1) + str[0] + "ay");
   }
 }
