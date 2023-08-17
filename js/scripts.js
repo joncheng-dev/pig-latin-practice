@@ -6,10 +6,27 @@
 
 let str;
 
+
 function pigLatin(str) {
   if (str[0].toLowerCase() === ("a" || "e" || "i" || "o" || "u")) {
     console.log(str.concat("way"));
+  } else if () {
+
   } else if (str[0].toLowerCase() !== ("a" || "e" || "i" || "o" || "u")) {
     console.log(str.slice(1) + str[0] + "ay");
   }
+}
+
+// straw
+
+function piggy(str) {
+  let counter = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i].toLowerCase() !== ("a" || "e" || "i" || "o" || "u")) {
+      counter ++;
+    } else {
+      break;
+    }
+  }
+  // console.log(str.slice(counter) + str[(str.length)-counter] + "ay");
 }
